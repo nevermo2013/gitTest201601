@@ -1,0 +1,92 @@
+@blue:#00A3CF;
+@purse:#B10DC9;
+@orange:#FF851B;
+@green:#2ECC40;
+@width:140px;
+@height:@width;
+@border1:10px solid #fff;
+  
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 18px;
+	color: #fff;
+
+}
+.content{
+	width: 960px;
+	margin: 50px auto; 
+	overflow: hidden;
+}
+.blue{
+	background-color: @blue;
+}
+.purse{
+	background-color: @purse;
+}
+.orange{
+	background-color: @orange;
+}
+.green{
+	background-color: @green;
+}
+.middle-row{
+	width: (@width+10)*2;
+	height: @height;
+	line-height: @height;
+	text-align: center;
+	float: left;
+	border:@border1;
+
+}
+
+.large{
+	width: (@width+10)*2;
+	height: (@height+10)*2;
+	line-height: (@height+10)*2;
+	text-align: center;
+	float: left;
+	border:@border1;
+}
+.small{
+	width: @width;
+	height: @height;
+	line-height: @height;
+	text-align: center;
+	float: left;
+	border:@border1;
+}  
+.middle-col{
+	width: @width;
+	height: (@height+10)*2;
+	line-height: (@height+10)*2;
+	text-align: center;
+	float: left;
+	border:@border1;
+}
+.center-over{
+	position: absolute;
+	left: 50%;
+	height: 50%;
+	margin-left: -160px;
+	margin-top: -60px;
+
+}
+
+.black{
+	position: relative;
+	.large,.middle-col{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+}
+
+.clear-border{
+	border: none;
+}
+
+
